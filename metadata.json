@@ -1,0 +1,6 @@
+{
+  "name": "Equipy - Hardware as a Service",
+  "description": "Sitio web profesional de Equipy, líder en gestión de activos inteligentes y soluciones Hardware-as-a-Service (HaaS) conectadas por IoT con esquemas de Pago por Uso y explotación conjunta (Split 70/30).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
