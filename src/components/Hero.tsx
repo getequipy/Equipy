@@ -1,4 +1,5 @@
 import { ArrowRight, Cpu, ShieldCheck, TrendingUp } from 'lucide-react';
+import heroImage from '../assets/images/equipy_premium_machinery_1782835890006.jpg';
 
 interface HeroProps {
   onDiscoverClick: () => void;
@@ -100,7 +101,7 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/10 to-transparent opacity-50 group-hover:opacity-75 transition-opacity duration-500 z-10 pointer-events-none" />
               
               <img
-                src="/src/assets/images/equipy_premium_machinery_1782835890006.jpg"
+                src={heroImage}
                 alt="Equipy Connected Machinery with IoT Telemetry"
                 className="w-full h-full object-cover select-none scale-102 group-hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
