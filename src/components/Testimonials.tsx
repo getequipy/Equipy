@@ -6,7 +6,7 @@ export default function Testimonials() {
       text: 'Gracias a Equipy, pudimos equipar nuestra clínica con tecnología de punta sin descapitalizarnos. ¡Un cambio de juego absoluto para incorporar nuevos tratamientos médicos!',
       name: 'Dr. Alejandro Mendoza',
       role: 'Director Médico',
-      company: 'Clínica Dental OdontoSalud (Madrid)',
+      company: 'Clínica Dental OdontoSalud (Barcelona)',
       initials: 'AM',
       avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=256&h=256',
       rating: 5
