@@ -66,6 +66,7 @@ export default function Services() {
                 {/* Visual Accent Top Line */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-navy to-brand-cyan opacity-0 group-hover:opacity-100 transition-opacity" />
                 
+                {/* Description of the service */}
                 <div>
                   <div className="inline-flex p-3 rounded-2xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-all duration-300 mb-6">
                     <IconComponent className="w-6 h-6" />
@@ -82,11 +83,6 @@ export default function Services() {
                   <p className="text-sm text-gray-500 leading-relaxed group-hover:text-gray-600 transition-colors">
                     {svc.description}
                   </p>
-                </div>
-                
-                <div className="mt-6 pt-4 border-t border-brand-gray-mid flex items-center text-xs font-bold text-brand-navy group-hover:text-brand-cyan transition-colors">
-                  <span>Saber más</span>
-                  <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             );
