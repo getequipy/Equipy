@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Rounded background in brand-navy (#006d77) -->
+  <rect width="32" height="32" rx="8" fill="#006d77" />
+  
+  <!-- The lowercase "i" in brand-cyan (#83c5be) -->
+  <!-- Dot of the "i" -->
+  <circle cx="16" cy="9.5" r="3" fill="#83c5be" />
+  
+  <!-- Stem of the "i" -->
+  <rect x="13" y="15" width="6" height="10" rx="1.5" fill="#83c5be" />
+</svg>
