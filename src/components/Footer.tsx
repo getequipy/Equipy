@@ -59,13 +59,13 @@ export default function Footer({ onNavigateToSection }: FooterProps) {
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigateToSection('ventajas')} className="hover:text-brand-cyan transition-colors text-left">
-                  Ventajas HaaS
+                <button onClick={() => onNavigateToSection('marcas')} className="hover:text-brand-cyan transition-colors text-left">
+                  Marcas Aliadas
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigateToSection('simulador')} className="hover:text-brand-cyan transition-colors text-left">
-                  Calcular ROI
+                <button onClick={() => onNavigateToSection('faq')} className="hover:text-brand-cyan transition-colors text-left">
+                  FAQ (Dudas)
                 </button>
               </li>
             </ul>

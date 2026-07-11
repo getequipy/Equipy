@@ -165,6 +165,91 @@ export default function AboutUs() {
           
         </div>
 
+        {/* ----------------- SECCIÓN DE FUNDADORES Y VISIÓN ----------------- */}
+        <div className="mt-24 pt-16 border-t border-brand-gray-mid">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="text-xs uppercase font-extrabold tracking-widest text-brand-cyan bg-brand-navy/5 px-3 py-1 rounded-full mb-3 inline-block">
+              El Equipo de Liderazgo
+            </span>
+            <h4 className="font-display font-bold text-2xl sm:text-3xl text-brand-navy">
+              Nuestros Fundadores
+            </h4>
+            <p className="text-gray-600 text-sm sm:text-base mt-3">
+              Uniendo experiencia en finanzas, ingeniería operativa, telemática IoT y gestión de activos para liderar la revolución del Hardware-as-a-Service.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            {/* Carlos Pérez */}
+            <div className="bg-white rounded-3xl p-8 border border-brand-gray-mid shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-16 h-16 bg-brand-navy/10 text-brand-navy rounded-2xl flex items-center justify-center font-display font-extrabold text-2xl mb-6">
+                  CP
+                </div>
+                <h5 className="font-display font-extrabold text-xl text-brand-navy">
+                  Carlos Pérez
+                </h5>
+                <p className="text-xs font-semibold text-brand-cyan uppercase tracking-wider mb-4">
+                  Co-Fundador & CEO
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed font-light">
+                  Ingeniero de Sistemas con MBA. Lidera la visión estratégica global, el desarrollo de negocio y la expansión comercial de EQUIPY. Su enfoque se centra en alianzas corporativas, viabilidad financiera y en abrir nuevas oportunidades de mercado para el modelo HaaS.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-brand-gray-light text-[11px] text-gray-400 font-mono flex items-center justify-between">
+                <span>ESTRATEGIA & COMERCIAL</span>
+                <span>BARCELONA</span>
+              </div>
+            </div>
+
+            {/* Raul Correia */}
+            <div className="bg-white rounded-3xl p-8 border border-brand-gray-mid shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-16 h-16 bg-brand-navy/10 text-brand-navy rounded-2xl flex items-center justify-center font-display font-extrabold text-2xl mb-6">
+                  RC
+                </div>
+                <h5 className="font-display font-extrabold text-xl text-brand-navy">
+                  Raúl Correia
+                </h5>
+                <p className="text-xs font-semibold text-brand-cyan uppercase tracking-wider mb-4">
+                  Co-Fundador & CTO
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed font-light">
+                  Ingeniero de Sistemas con MBA. Aporta su perfil tecnológico especializado en hardware, sistemas complejos y project management. Responsable de planificar el despliegue técnico de maquinaria y dirigir la ejecución operativa de los proyectos físicos.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-brand-gray-light text-[11px] text-gray-400 font-mono flex items-center justify-between">
+                <span>HARDWARE, SISTEMAS & PM</span>
+                <span>BARCELONA</span>
+              </div>
+            </div>
+
+            {/* Dany Fariña */}
+            <div className="bg-white rounded-3xl p-8 border border-brand-gray-mid shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-16 h-16 bg-brand-navy/10 text-brand-navy rounded-2xl flex items-center justify-center font-display font-extrabold text-2xl mb-6">
+                  DF
+                </div>
+                <h5 className="font-display font-extrabold text-xl text-brand-navy">
+                  Dany Fariña
+                </h5>
+                <p className="text-xs font-semibold text-brand-cyan uppercase tracking-wider mb-4">
+                  Co-Fundador & Director de Software y Administración
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed font-light">
+                  Ingeniero en Software. Responsable del desarrollo de las soluciones digitales y de telemetría IoT de EQUIPY, así como de la gestión interna y administrativa de la sociedad. Combina control operativo con automatización para un servicio ágil.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-brand-gray-light text-[11px] text-gray-400 font-mono flex items-center justify-between">
+                <span>SOFTWARE & ADMINISTRACIÓN</span>
+                <span>BARCELONA</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );

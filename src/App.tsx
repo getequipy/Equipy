@@ -13,11 +13,12 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
+import PartnerBrands from './components/PartnerBrands';
 import RoiSimulator from './components/RoiSimulator';
 import IotTelemetry from './components/IotTelemetry';
 import VisionMission from './components/VisionMission';
 import Comparison from './components/Comparison';
-import Testimonials from './components/Testimonials';
+import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -36,9 +37,10 @@ export default function App() {
       'inicio',
       'quienes-somos',
       'servicios',
-      'ventajas',
+      'marcas',
       'simulador',
       'telemetria',
+      'faq',
       'contacto'
     ];
 
@@ -105,6 +107,9 @@ export default function App() {
         {/* 3. Services Directory */}
         <Services />
 
+        {/* 3.5. Partner Brands (Marcas Aliadas) */}
+        <PartnerBrands />
+
         {/* 4. Strategic Advantages & Comparison Table */}
         <Comparison />
 
@@ -119,8 +124,8 @@ export default function App() {
         {/* 7. Corporate Purpose Vision & Mission */}
         <VisionMission />
 
-        {/* 8. Verified Testimonials */}
-        <Testimonials />
+        {/* 8. FAQ Block */}
+        <Faq />
 
         {/* 9. Contact form & live Firestore storage database review panel */}
         <Contact

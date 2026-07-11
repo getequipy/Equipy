@@ -23,8 +23,8 @@ export default function Header({ onNavigateToSection, activeSection }: HeaderPro
     { id: 'inicio', label: 'Inicio' },
     { id: 'quienes-somos', label: 'Quiénes Somos' },
     { id: 'servicios', label: 'Qué Hacemos' },
-    { id: 'ventajas', label: 'Ventajas HaaS' },
-    { id: 'telemetria', label: 'IoT Hub Live' },
+    { id: 'marcas', label: 'Marcas Aliadas' },
+    { id: 'faq', label: 'FAQ (Dudas)' },
     { id: 'contacto', label: 'Contacto' }
   ];
 
