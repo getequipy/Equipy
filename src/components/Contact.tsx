@@ -266,6 +266,16 @@ export default function Contact({ preFillData, onClearPreFill }: ContactProps) {
                 )}
               </button>
 
+              <div className="text-center pt-4 border-t border-brand-gray-mid/60 text-xs text-gray-500">
+                O si lo prefieres, también puedes escribirnos directamente por email a:{' '}
+                <a
+                  href="mailto:contacto@getequipy.com"
+                  className="font-bold text-brand-navy hover:text-brand-cyan transition-colors"
+                >
+                  contacto@getequipy.com
+                </a>
+              </div>
+
             </form>
 
           </div>

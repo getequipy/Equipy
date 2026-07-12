@@ -35,6 +35,13 @@ export default function Footer({ onNavigateToSection }: FooterProps) {
             <p className="text-xs text-brand-cyan font-semibold">
               "Más servicios, más ingresos. Cero inversión."
             </p>
+
+            <div className="pt-2 text-xs text-gray-400 flex items-center space-x-2">
+              <span className="opacity-85">Contacto Directo:</span>
+              <a href="mailto:contacto@getequipy.com" className="text-brand-cyan hover:underline transition-all font-medium">
+                contacto@getequipy.com
+              </a>
+            </div>
           </div>
 
           {/* Quick links Col */}
