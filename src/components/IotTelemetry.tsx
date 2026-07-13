@@ -11,11 +11,10 @@ export default function IotTelemetry() {
   const logContainerRef = useRef<HTMLDivElement>(null);
 
   const initialLogs: TelemetryLog[] = [
-    { id: '1', timestamp: '09:12:14', assetName: 'Láser Diodo S-01', status: 'completed', message: 'Sesión de depilación finalizada. Duración: 45 min.', metricValue: '1 ciclo', splitEarnings: 18.00 },
-    { id: '2', timestamp: '09:12:45', assetName: 'Cafetera Espresso #12', status: 'active', message: 'Espresso Barista preparado - Pago aprobado por NFC.', metricValue: '1 taza', splitEarnings: 0.75 },
-    { id: '3', timestamp: '09:13:01', assetName: 'Fresa CNC Router C-03', status: 'active', message: 'Inicio de mecanizado en 3D. Fresa activada.', metricValue: '8500 RPM' },
-    { id: '4', timestamp: '09:13:30', assetName: 'Plotter Sublimación P-02', status: 'completed', message: 'Trabajo impreso correctamente. Formato 1.5m.', metricValue: '3.5 metros', splitEarnings: 7.50 },
-    { id: '5', timestamp: '09:14:00', assetName: 'Escáner Dental D-08', status: 'idle', message: 'Dispositivo en espera de paciente. Calibración OK.', metricValue: '36.2 °C' }
+    { id: '1', timestamp: '09:12:14', assetName: 'Láser Diodo S-01', status: 'completed', message: 'Sesión de depilación avanzada finalizada.', metricValue: 'Uso: 45 min', splitEarnings: 18.00 },
+    { id: '2', timestamp: '09:12:45', assetName: 'Horno Rational H-01', status: 'active', message: 'Horneado por convección a 180°C.', metricValue: 'Uso: 35 min', splitEarnings: 4.50 },
+    { id: '3', timestamp: '09:13:01', assetName: 'Radiofrecuencia RF-02', status: 'active', message: 'Tratamiento de fisioterapia y termoterapia.', metricValue: 'Uso: 30 min' },
+    { id: '4', timestamp: '09:13:30', assetName: 'Horno Mychef H-02', status: 'completed', message: 'Cocción mixta vaporizada completada.', metricValue: 'Uso: 20 min', splitEarnings: 3.20 }
   ];
 
   // Initialize logs
@@ -37,12 +36,11 @@ export default function IotTelemetry() {
     const interval = setInterval(() => {
       // Generate randomized telemetry events
       const assetOptions = [
-        { name: 'Cafetera Espresso #12', message: 'Extracción completada. Taza servida.', metric: '1 taza', split: 0.75, status: 'completed' as const },
-        { name: 'Fresa CNC Router C-03', message: 'Control numérico en curso. Avance: 84%.', metric: '9000 RPM', status: 'active' as const },
-        { name: 'Impresora 3D Ind-04', message: 'Capa #842 extruida. Temperatura de boquilla estable.', metric: '215 °C', status: 'active' as const },
-        { name: 'Láser Diodo S-01', message: 'Disparo de pulso láser. Densidad de energía: 22J/cm².', metric: '1 pulso', status: 'active' as const },
-        { name: 'Plotter Sublimación P-02', message: 'Enfriamiento del cabezal térmico activo.', metric: '42 °C', status: 'idle' as const },
-        { name: 'Escáner Dental D-08', message: 'Escaneo intraoral digital completado. Modelo dental exportado.', metric: '1 escaneo', status: 'completed' as const }
+        { name: 'Horno Rational H-01', message: 'Cocción por convección gourmet en curso.', metric: 'Uso: 40 min', split: 3.50, status: 'active' as const },
+        { name: 'Láser Diodo S-01', message: 'Tratamiento de estética finalizado con éxito.', metric: 'Uso: 30 min', split: 18.00, status: 'completed' as const },
+        { name: 'Horno Mychef H-02', message: 'Precalentamiento rápido de cámara completado.', metric: 'Uso: 15 min', split: 1.50, status: 'completed' as const },
+        { name: 'Radiofrecuencia RF-02', message: 'Emisión de frecuencia para terapia celular activa.', metric: 'Uso: 25 min', status: 'active' as const },
+        { name: 'Horno Convector H-03', message: 'Cocción lenta a baja temperatura finalizada.', metric: 'Uso: 120 min', split: 6.80, status: 'completed' as const }
       ];
 
       const chosenAsset = assetOptions[Math.floor(Math.random() * assetOptions.length)];
@@ -59,7 +57,7 @@ export default function IotTelemetry() {
         splitEarnings: chosenAsset.split || undefined
       };
 
-      setLogs(prev => [...prev.slice(-14), newLog]); // Keep last 15 elements
+      setLogs(prev => [...prev.slice(-3), newLog]); // Keep last 4 elements
       
       // Slightly fluctuate variables
       if (newLog.splitEarnings) {
@@ -74,10 +72,10 @@ export default function IotTelemetry() {
   // Manually trigger a user session transaction
   const handleTriggerManualTransaction = () => {
     const assetsWithSplits = [
-      { name: 'Cafetera Espresso #12', message: 'Transacción Manual NFC: Doble Cappuccino Premium preparado.', metric: '1 taza', split: 0.90 },
-      { name: 'Impresora 3D Ind-04', message: 'Inicio manual de prototipado rápido HaaS.', metric: '2 horas', split: 12.00 },
-      { name: 'Plotter Sublimación P-02', message: 'Impresión de lona promocional aprobada.', metric: '5 metros', split: 15.00 },
-      { name: 'Fresa CNC Router C-03', message: 'Mecanizado de precisión para cliente autónomo completado.', metric: '1 hora', split: 24.00 }
+      { name: 'Horno Rational H-01', message: 'Transacción HaaS: Horneado de menú especial.', metric: 'Uso: 60 min', split: 5.50 },
+      { name: 'Láser Diodo S-01', message: 'Transacción HaaS: Sesión de estética corporal aprobada.', metric: 'Uso: 45 min', split: 22.00 },
+      { name: 'Radiofrecuencia RF-02', message: 'Transacción HaaS: Tratamiento regenerativo muscular.', metric: 'Uso: 35 min', split: 12.50 },
+      { name: 'Horno Mychef H-02', message: 'Transacción HaaS: Servicio de catering premium activo.', metric: 'Uso: 90 min', split: 8.40 }
     ];
 
     const randomAsset = assetsWithSplits[Math.floor(Math.random() * assetsWithSplits.length)];
@@ -94,13 +92,13 @@ export default function IotTelemetry() {
       splitEarnings: randomAsset.split
     };
 
-    setLogs(prev => [...prev, manualLog]);
+    setLogs(prev => [...prev.slice(-3), manualLog]);
     setTotalCommissionToday(prev => prev + randomAsset.split);
     setActiveNodesCount(prev => Math.min(30, prev + 1));
   };
 
   return (
-    <section id="telemetria" className="py-24 bg-brand-deep text-white border-b border-brand-navy/60 relative overflow-hidden">
+    <section id="telemetria" className="py-16 bg-brand-deep text-white border-b border-brand-navy/60 relative overflow-hidden">
       {/* Visual neon lines */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-cyan/5 rounded-full blur-[160px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-navy/10 rounded-full blur-[160px] pointer-events-none" />
@@ -108,7 +106,7 @@ export default function IotTelemetry() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-xs uppercase font-extrabold tracking-widest text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 inline-block px-3.5 py-1.5 rounded-full mb-4">
             IoT Hub Live Telemetry
           </h2>
@@ -123,9 +121,8 @@ export default function IotTelemetry() {
 
         {/* Dashboard Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
           {/* Diagnostic Widget Bar Column 4 */}
-          <div className="lg:col-span-4 space-y-4 flex flex-col justify-between">
+          <div className="lg:col-span-4 space-y-4 flex flex-col justify-start">
             
             {/* Widget 1: Network Ping / Telemetry health */}
             <div className="bg-brand-dark/80 border border-brand-navy/30 p-5 rounded-2xl flex items-center justify-between">
@@ -143,72 +140,32 @@ export default function IotTelemetry() {
               </span>
             </div>
 
-            {/* Widget 2: Node activity count */}
-            <div className="bg-brand-dark/80 border border-brand-navy/30 p-5 rounded-2xl flex items-center justify-between">
-              <div className="flex items-center space-x-3.5">
-                <div className="bg-brand-cyan/10 p-2.5 rounded-xl text-brand-cyan">
-                  <Server className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-xs text-gray-400 block font-mono">ACTIVOS ACTIVOS (MADRID)</span>
-                  <span className="text-base font-bold font-display text-white">{activeNodesCount} Máquinas IoT</span>
-                </div>
-              </div>
-              <span className="text-xs font-mono font-bold text-brand-cyan bg-brand-navy/60 border border-brand-cyan/20 px-2.5 py-1 rounded">
-                SECURE_SSL
-              </span>
-            </div>
-
-            {/* Widget 3: Live Earnings Counter Split */}
-            <div className="bg-brand-navy/30 border border-brand-cyan/20 p-6 rounded-3xl flex flex-col justify-between space-y-4">
-              <div>
-                <span className="text-[10px] uppercase font-extrabold tracking-widest text-brand-cyan block mb-1">
-                  INGRESOS SPLIT EN ESPACIOS HOY
-                </span>
-                <p className="text-3xl font-display font-black text-white">
-                  {totalCommissionToday.toFixed(2)} €
-                </p>
-                <p className="text-[11px] text-gray-400 mt-1">
-                  Comisión del 30% neta liquidada automáticamente a las cuentas de los coworkings.
-                </p>
-              </div>
-              
-              <button
-                onClick={handleTriggerManualTransaction}
-                className="w-full bg-brand-cyan hover:bg-cyan-400 text-brand-deep font-bold py-3 rounded-xl flex items-center justify-center space-x-2 transition-transform duration-200 hover:scale-102"
-              >
-                <PlusCircle className="w-4 h-4 fill-brand-deep text-brand-cyan" />
-                <span className="text-xs font-extrabold">Simular Uso en Coworking</span>
-              </button>
-            </div>
-
             {/* Simulated legend nodes status */}
             <div className="bg-brand-dark/50 border border-brand-navy/30 p-5 rounded-2xl">
               <span className="text-xs text-gray-400 block font-mono mb-3">CONEXIONES LOCALES DE MAQUINARIA</span>
               <div className="grid grid-cols-2 gap-2 text-xs font-mono">
-                <div className="flex items-center space-x-1.5 text-green-400">
-                  <div className="w-2 h-2 rounded-full bg-green-400" />
-                  <span>Coffee_Espresso_12 (OK)</span>
+                <div className="flex items-center space-x-1.5 text-yellow-400">
+                  <div className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
+                  <span>Horno_Rational_H01 (Active)</span>
                 </div>
                 <div className="flex items-center space-x-1.5 text-green-400">
                   <div className="w-2 h-2 rounded-full bg-green-400" />
                   <span>Laser_Diodo_01 (OK)</span>
                 </div>
-                <div className="flex items-center space-x-1.5 text-yellow-400">
-                  <div className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
-                  <span>CNC_Router_C03 (Active)</span>
-                </div>
                 <div className="flex items-center space-x-1.5 text-green-400">
                   <div className="w-2 h-2 rounded-full bg-green-400" />
-                  <span>Subli_Plotter_P02 (OK)</span>
+                  <span>Radiofrecuencia_RF02 (OK)</span>
+                </div>
+                <div className="flex items-center space-x-1.5 text-yellow-400">
+                  <div className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
+                  <span>Horno_Mychef_H02 (Active)</span>
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* Terminal / Live Console Logs Column 8 */}
-          <div className="lg:col-span-8 bg-black/80 rounded-3xl border border-brand-navy/30 overflow-hidden flex flex-col h-[400px] lg:h-auto justify-between shadow-2xl">
+          <div className="lg:col-span-8 bg-black/80 rounded-3xl border border-brand-navy/30 overflow-hidden flex flex-col h-[380px] justify-between shadow-2xl">
             
             {/* Terminal Top Nav Bar */}
             <div className="bg-brand-dark px-6 py-4 border-b border-brand-navy/30 flex items-center justify-between">
