@@ -81,7 +81,7 @@ export default function Header({ onNavigateToSection, activeSection }: HeaderPro
               className="ml-4 flex items-center space-x-1.5 bg-brand-cyan hover:bg-[#0c908c] text-white px-4 py-2.5 rounded-lg text-sm font-bold shadow-[0_4px_12px_rgba(13,161,156,0.2)] hover:shadow-[0_4px_16px_rgba(13,161,156,0.35)] transition-all duration-200"
             >
               <Calculator className="w-4 h-4" />
-              <span>Calcular ROI</span>
+              <span>Simulador</span>
             </button>
           </nav>
 
@@ -122,7 +122,7 @@ export default function Header({ onNavigateToSection, activeSection }: HeaderPro
               className="flex items-center justify-center space-x-2 bg-brand-cyan hover:bg-[#0c908c] text-white py-3.5 rounded-lg text-base font-bold shadow-md"
             >
               <Calculator className="w-5 h-5" />
-              <span>Calcular ROI HaaS</span>
+              <span>Simulador HaaS</span>
             </button>
           </div>
         </div>

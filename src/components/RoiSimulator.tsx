@@ -86,7 +86,7 @@ export default function RoiSimulator({ onPreFillContact }: RoiSimulatorProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-xs uppercase font-extrabold tracking-widest text-brand-cyan bg-brand-navy/5 inline-block px-3.5 py-1.5 rounded-full mb-4">
-            Calcular ROI
+            Simulador
           </h2>
           <h3 className="font-display font-bold text-3xl sm:text-4xl text-brand-navy leading-tight">
             Descubre el Impacto Financiero Inmediato de EQUIPY HaaS

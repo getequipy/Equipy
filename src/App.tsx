@@ -37,9 +37,9 @@ export default function App() {
       'inicio',
       'quienes-somos',
       'servicios',
-      'marcas',
       'simulador',
       'telemetria',
+      'marcas',
       'faq',
       'contacto'
     ];
@@ -104,11 +104,11 @@ export default function App() {
         {/* 2. About Us - CapEx vs OpEx */}
         <AboutUs />
 
+        {/* 2.5. Corporate Purpose Vision & Mission */}
+        <VisionMission />
+
         {/* 3. Services Directory */}
         <Services />
-
-        {/* 3.5. Partner Brands (Marcas Aliadas) */}
-        <PartnerBrands />
 
         {/* 4. Strategic Advantages & Comparison Table */}
         <Comparison />
@@ -121,8 +121,8 @@ export default function App() {
         {/* 6. Live IoT Telemetry Mock Console */}
         <IotTelemetry />
 
-        {/* 7. Corporate Purpose Vision & Mission */}
-        <VisionMission />
+        {/* 7. Partner Brands (Marcas Aliadas) */}
+        <PartnerBrands />
 
         {/* 8. FAQ Block */}
         <Faq />
