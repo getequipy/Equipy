@@ -14,6 +14,7 @@ import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import PartnerBrands from './components/PartnerBrands';
+import TrustBadges from './components/TrustBadges';
 import RoiSimulator from './components/RoiSimulator';
 import IotTelemetry from './components/IotTelemetry';
 import VisionMission from './components/VisionMission';
@@ -109,6 +110,9 @@ export default function App() {
 
         {/* 3.5. Partner Brands (Marcas Aliadas) */}
         <PartnerBrands />
+
+        {/* 3.6. Certifications & Trust Badges */}
+        <TrustBadges />
 
         {/* 4. Strategic Advantages & Comparison Table */}
         <Comparison />
