@@ -1,4 +1,4 @@
-import { Cpu, Eye, CreditCard, ShieldCheck, ArrowRight, Share2, Award } from 'lucide-react';
+import { Cpu, Eye, CreditCard, ShieldCheck, ArrowRight, Share2, Award, Heart, Utensils, Building2 } from 'lucide-react';
 
 export default function Services() {
   const services = [
@@ -143,7 +143,7 @@ export default function Services() {
                   Clínicas, Talleres Mecánicos, Labs
                 </span>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Suministramos las herramientas que tus empleados necesitan para abrir nuevas líneas de servicio premium. Estructuramos el acceso mediante <strong>tarifas planas de uso auditadas por telemetría</strong> o rentings operativos flexibles a mes vencido. Pagas a medida que los equipos generan facturación.
+                  Suministramos las herramientas que tus empleados necesitan para abrir nuevas líneas de servicio premium. Estructuramos el acceso mediante <strong>tarifas planas de uso auditadas por telemetría</strong> o suscripciones operativas flexibles a mes vencido. Pagas a medida que los equipos generan facturación.
                 </p>
               </div>
 
@@ -162,6 +162,68 @@ export default function Services() {
             </a>
           </div>
 
+        </div>
+
+        {/* Sectors and Target Clients Section */}
+        <div className="mt-24">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-xs uppercase font-extrabold tracking-widest text-brand-cyan bg-brand-navy/5 inline-block px-3.5 py-1.5 rounded-full mb-3">
+              Sectores y Clientes de Destino
+            </span>
+            <h4 className="font-display font-bold text-2xl sm:text-3xl text-brand-navy leading-tight">
+              Soluciones HaaS a Medida de tu Sector
+            </h4>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Sector 1: Salud & Bienestar */}
+            <div className="bg-brand-gray-light border border-brand-gray-mid p-8 rounded-3xl relative group hover:border-brand-cyan/30 hover:bg-white hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-rose-500/10 text-rose-500 rounded-2xl flex items-center justify-center mb-6 font-bold group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+                <Heart className="w-6 h-6" />
+              </div>
+              <h5 className="font-display font-bold text-lg text-brand-navy mb-3">
+                Salud, Estética y Bienestar
+              </h5>
+              <p className="text-xs text-gray-400 font-mono uppercase tracking-wider mb-4 block">
+                Centros profesionales
+              </p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Maquinaria tecnológica especializada para <strong>Centros de Fisioterapia, Clínicas de Rehabilitación y Centros de Estética</strong>. Acceso instantáneo a aparatología avanzada bajo el esquema de pago por uso de forma flexible y con mantenimiento SAT integral.
+              </p>
+            </div>
+
+            {/* Sector 2: Gastronomía & Alimentación */}
+            <div className="bg-brand-gray-light border border-brand-gray-mid p-8 rounded-3xl relative group hover:border-brand-cyan/30 hover:bg-white hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-2xl flex items-center justify-center mb-6 font-bold group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                <Utensils className="w-6 h-6" />
+              </div>
+              <h5 className="font-display font-bold text-lg text-brand-navy mb-3">
+                Gastronomía, Hostelería y Alimentación
+              </h5>
+              <p className="text-xs text-gray-400 font-mono uppercase tracking-wider mb-4 block">
+                Producción y cocina profesional
+              </p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Suministro de equipos industriales de última generación para <strong>Ghost Kitchens, Hubs Gastronómicos, Obradores de Panadería/Pastelería, Restaurantes y Hoteles</strong> en Barcelona, medido a través de telemetría segura.
+              </p>
+            </div>
+
+            {/* Sector 3: Espacios Compartidos & Coworkings */}
+            <div className="bg-brand-gray-light border border-brand-gray-mid p-8 rounded-3xl relative group hover:border-brand-cyan/30 hover:bg-white hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-brand-navy/10 text-brand-navy rounded-2xl flex items-center justify-center mb-6 font-bold group-hover:bg-brand-navy group-hover:text-white transition-all duration-300">
+                <Building2 className="w-6 h-6" />
+              </div>
+              <h5 className="font-display font-bold text-lg text-brand-navy mb-3">
+                Espacios Compartidos y de Trabajo
+              </h5>
+              <p className="text-xs text-gray-400 font-mono uppercase tracking-wider mb-4 block">
+                Hubs de valor añadido
+              </p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Soluciones operativas de alta gama para <strong>Coworkings, Centros de Negocio, Hubs Tecnológicos y Talleres compartidos</strong>. Potencia tu oferta con servicios de valor sin realizar grandes desembolsos de capital inicial.
+              </p>
+            </div>
+          </div>
         </div>
 
       </div>

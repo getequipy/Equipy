@@ -24,7 +24,7 @@ export default function Comparison() {
     {
       title: 'Mantenimiento Integral y Continuidad',
       points: [
-        'Asistencia SAT Premium: Mantenimiento preventivo y correctivo rápido (SAT < 24h en modalidades clave).',
+        'Asistencia SAT Premium: Mantenimiento preventivo y correctivo rápido para garantizar la continuidad del servicio.',
         'Cero Costes Ocultos: Revisiones, repuestos y actualizaciones de software 100% incluidos en el acuerdo.',
         'Maximización de Up-time: Monitoreo IoT para anticiparnos a fallas y garantizar operaciones continuas.'
       ],
@@ -35,7 +35,7 @@ export default function Comparison() {
       points: [
         'Pago por Uso: a) Facturación mensual indexada de forma directa al uso real medido por telemetría IoT. b) Servicio prepagado por el usuario mediante pasarela de pago y código QR.',
         'Suscripción Mensual por Operador / Usuario: El espacio o hub comercializa un pase "Premium" o una membresía mensual para acceder a la maquinaria. El beneficio se reparte.',
-        'Alquiler Fijo Mensual Tradicional: El partner abona una cuota fija recurrente por la disponibilidad exclusiva del equipo.'
+        'Cuota de Suscripción Fija Mensual: El partner abona una cuota fija recurrente por la disponibilidad exclusiva del equipo.'
       ],
       icon: TrendingUp
     }

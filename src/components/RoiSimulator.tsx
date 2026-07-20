@@ -59,7 +59,7 @@ export default function RoiSimulator({ onPreFillContact }: RoiSimulatorProps) {
     opexMonthlyCost = 0; // Cost is 0
     opexMonthlyNetProfit = totalGrossRevenue * 0.30; // 30% clean commission for the space
   } else {
-    opexLabel = `Renting Operativo Telemetría`;
+    opexLabel = `Suscripción por Uso (Telemetría)`;
     opexMonthlyCost = currentAsset.haasMonthlyRent || (assetCost * 0.04); // Fallback to 4%
     opexMonthlyNetProfit = Math.max(0, totalGrossRevenue - opexMonthlyCost);
   }
@@ -70,7 +70,7 @@ export default function RoiSimulator({ onPreFillContact }: RoiSimulatorProps) {
   const cashflowDifference = opexNetMonth1 - capexNetMonth1;
 
   const handleApplyHaaS = () => {
-    const usageMessage = `Hola Equipy, estoy interesado en vuestra solución HaaS para el equipo "${currentAsset.name}" en un espacio de tipo "${currentVertical.name}". Mis parámetros simulados son: ${monthlyUses} ${currentAsset.metricUnit} al mes con un cargo estimado de ${chargePerUse.toFixed(2)}€ por uso, buscando un acuerdo de tipo ${useSplitModel ? 'Explotación Conjunta (Reparto de ingresos 70/30)' : 'Renting Operativo por Telemetría'}. ¡Solicito propuesta personalizada!`;
+    const usageMessage = `Hola Equipy, estoy interesado en vuestra solución HaaS para el equipo "${currentAsset.name}" en un espacio de tipo "${currentVertical.name}". Mis parámetros simulados son: ${monthlyUses} ${currentAsset.metricUnit} al mes con un cargo estimado de ${chargePerUse.toFixed(2)}€ por uso, buscando un acuerdo de tipo ${useSplitModel ? 'Explotación Conjunta (Reparto de ingresos 70/30)' : 'Suscripción Operativa por Telemetría'}. ¡Solicito propuesta personalizada!`;
     
     onPreFillContact(currentVertical.name, currentAsset.name, monthlyUses, usageMessage);
   };

@@ -109,7 +109,7 @@ export default function Faq() {
             ¿Tienes otra pregunta sobre la explotación conjunta o casos particulares? 
             <a href="#contacto" className="text-brand-cyan hover:underline font-bold ml-1">
               Contáctanos directamente
-            </a> y resolveremos tu consulta en menos de 24h.
+            </a> y resolveremos tu consulta con la mayor brevedad.
           </p>
         </div>
 
