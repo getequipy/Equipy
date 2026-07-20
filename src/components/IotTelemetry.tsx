@@ -108,13 +108,13 @@ export default function IotTelemetry() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-xs uppercase font-extrabold tracking-widest text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 inline-block px-3.5 py-1.5 rounded-full mb-4">
-            IoT Hub Live Telemetry
+            Consola Demo de Telemetría IoT
           </h2>
           <h3 className="font-display font-bold text-3xl sm:text-4xl text-white leading-tight">
-            Transparencia Absoluta en Tiempo Real
+            Transparencia y Automatización
           </h3>
           <p className="text-gray-400 mt-4 text-sm sm:text-base">
-            Nuestros activos inteligentes informan de su rendimiento cada segundo. Auditamos el uso y coordinamos los pagos de forma automatizada mediante Internet de las Cosas (IoT), sin fricción ni papeleo.
+            Esta consola interactiva demuestra cómo los activos inteligentes transmiten la data en tiempo real.
           </p>
           <div className="w-16 h-1 bg-brand-cyan mx-auto mt-4 rounded-full" />
         </div>
@@ -131,8 +131,8 @@ export default function IotTelemetry() {
                   <Wifi className="w-6 h-6 animate-pulse" />
                 </div>
                 <div>
-                  <span className="text-xs text-gray-400 block font-mono">ESTADO DEL SERVIDOR</span>
-                  <span className="text-base font-bold font-display text-white">Online & Conectado</span>
+                  <span className="text-xs text-gray-400 block font-mono">ESTADO DE SIMULACIÓN</span>
+                  <span className="text-base font-bold font-display text-white">Activa</span>
                 </div>
               </div>
               <span className="text-xs font-mono font-bold text-green-400 bg-green-950/40 border border-green-500/20 px-2.5 py-1 rounded">
@@ -142,7 +142,7 @@ export default function IotTelemetry() {
 
             {/* Simulated legend nodes status */}
             <div className="bg-brand-dark/50 border border-brand-navy/30 p-5 rounded-2xl">
-              <span className="text-xs text-gray-400 block font-mono mb-3">CONEXIONES LOCALES DE MAQUINARIA</span>
+              <span className="text-xs text-gray-400 block font-mono mb-3">CONEXIONES DE MAQUINARIA (MOCKUP DEMO)</span>
               <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                 <div className="flex items-center space-x-1.5 text-yellow-400">
                   <div className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
@@ -173,7 +173,7 @@ export default function IotTelemetry() {
                 <div className="w-3 h-3 bg-red-500 rounded-full" />
                 <div className="w-3 h-3 bg-yellow-500 rounded-full" />
                 <div className="w-3 h-3 bg-green-500 rounded-full" />
-                <span className="text-xs text-gray-400 font-mono pl-4">equipy-telemetry-cli://madrid-gateway</span>
+                <span className="text-xs text-gray-400 font-mono pl-4">equipy-telemetry-cli://barcelona-gateway</span>
               </div>
 
               <div className="flex items-center space-x-3 text-xs">
@@ -196,8 +196,8 @@ export default function IotTelemetry() {
               ref={logContainerRef}
               className="p-6 overflow-y-auto flex-1 font-mono text-xs sm:text-sm space-y-3 scrollbar-thin scrollbar-thumb-brand-navy scrollbar-track-black"
             >
-              <div className="text-gray-500 text-xs">*** Conectado al gateway IoT central de EQUIPY ***</div>
-              <div className="text-gray-500 text-xs">*** Escuchando transmisiones seguras encriptadas SSL ***</div>
+              <div className="text-gray-500 text-xs">*** [MODO VISTA PREVIA / DEMO SIMULADA] ***</div>
+              <div className="text-gray-500 text-xs">*** Conectado al gateway de simulación de Barcelona ***</div>
               
               {logs.map((log) => {
                 let badgeColor = 'text-green-400';

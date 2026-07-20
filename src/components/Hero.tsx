@@ -46,7 +46,7 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
 
           {/* Description */}
           <p className="text-gray-100 text-lg sm:text-xl font-light max-w-2xl leading-relaxed">
-            Maquinaria especializada sin Inversión Inicial. Paga por Uso. Conectado por IoT. Expandir tus operaciones nunca fue tan simple ni tan seguro.
+            Maquinaria especializada sin Inversión Inicial. Paga por Uso. Monitorización por IoT. Expande tus operaciones agregando valor a tus clientes de forma simple y segura.
           </p>
 
           {/* Explainer card for HaaS on Dark Background */}
@@ -114,8 +114,8 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-cyan"></span>
         </div>
         <div>
-          <span className="text-[10px] text-brand-cyan font-mono font-bold uppercase tracking-wider block">Telemetría IoT Activa</span>
-          <span className="text-[9px] text-gray-300">Nodos conectados en España</span>
+          <span className="text-[10px] text-brand-cyan font-mono font-bold uppercase tracking-wider block">Demo de Telemetría IoT</span>
+          <span className="text-[9px] text-gray-300">Simulación en Vivo (Fase Piloto)</span>
         </div>
       </div>
     </section>

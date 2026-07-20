@@ -94,7 +94,7 @@ export default function AboutUs() {
                     <DollarSign className="w-5 h-5" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-brand-navy mb-1">Inversión Inicial Devastadora</h5>
+                    <h5 className="font-bold text-brand-navy mb-1">Inversión inicial que afecta la contabilidad y flujo de caja del negocio.</h5>
                     <p>Desembolso total del 100% del valor del activo al inicio, drenando la liquidez e interrumpiendo las reservas de caja críticas.</p>
                   </div>
                 </div>
@@ -153,8 +153,7 @@ export default function AboutUs() {
               </div>
             )}
 
-            <div className="mt-6 pt-6 border-t border-brand-gray-mid flex items-center justify-between text-xs text-gray-500">
-              <span>* Fuente: Análisis comparativo de liquidez EQUIPY HaaS</span>
+            <div className="mt-6 pt-6 border-t border-brand-gray-mid flex items-center justify-end text-xs text-gray-500">
               <a href="#simulador" className="text-brand-cyan font-bold flex items-center space-x-1 hover:underline">
                 <span>Ver simulación en vivo</span>
                 <ArrowRight className="w-3.5 h-3.5" />

@@ -248,6 +248,30 @@ export default function Contact({ preFillData, onClearPreFill }: ContactProps) {
                 </div>
               )}
 
+              {/* RGPD Compliance Checkbox */}
+              <div className="bg-white/40 p-4 rounded-2xl border border-brand-gray-mid">
+                <label className="flex items-start space-x-3 cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    required
+                    className="mt-1 h-4.5 w-4.5 rounded border-brand-gray-mid text-brand-cyan focus:ring-brand-cyan shrink-0 transition-all cursor-pointer"
+                  />
+                  <span className="text-xs text-gray-500 leading-normal">
+                    He leído y acepto expresamente la{' '}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        window.dispatchEvent(new CustomEvent('open-legal-modal', { detail: 'privacy' }));
+                      }}
+                      className="text-brand-cyan underline font-semibold hover:text-brand-navy inline-block"
+                    >
+                      Política de Privacidad
+                    </button>{' '}
+                    y autorizo a EQUIPY a recopilar y procesar mis datos para resolver esta consulta comercial según el reglamento europeo RGPD.
+                  </span>
+                </label>
+              </div>
+
               <button
                 type="submit"
                 disabled={isSubmitting}

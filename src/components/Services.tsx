@@ -10,7 +10,7 @@ export default function Services() {
       tag: 'Hardware Especializado'
     },
     {
-      title: 'Conectividad IoT Avanzada',
+      title: 'Monitorización avanzada a través de IoT',
       description: 'Monitorea, gestiona y optimiza tus activos en tiempo real. Control de accesos sin fricción y telemetría de uso directo a través de nuestra plataforma inteligente.',
       icon: Cpu,
       color: 'from-brand-cyan to-cyan-500',
@@ -102,7 +102,7 @@ export default function Services() {
             <div className="lg:col-span-4 space-y-4">
               <div className="inline-flex items-center space-x-2 bg-brand-cyan/20 px-3 py-1.5 rounded-full text-brand-cyan text-xs font-semibold uppercase tracking-wider">
                 <Share2 className="w-3.5 h-3.5" />
-                <span>Modalidades Comerciales</span>
+                <span>Formatos de Instalación</span>
               </div>
               <h4 className="font-display font-bold text-2xl sm:text-3xl">
                 Dos Formas de Transformar tus Espacios
@@ -127,7 +127,7 @@ export default function Services() {
                   Coworkings, Dark Kitchens, Talleres
                 </span>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Instalamos maquinaria especializada en zonas comunes bajo un modelo de <strong>explotación conjunta con ingresos compartidos (Revenue Share)</strong>. Los usuarios autónomos acceden al equipo mediante pago por uso móvil, y tu centro se lleva una <strong>comisión neta garantizada del rendimiento mensual</strong> solo por ceder el espacio, sin tocar un solo euro de tu caja.
+                  Instalamos maquinaria especializada en zonas comunes bajo un modelo de <strong>explotación conjunta con ingresos compartidos (Revenue Share)</strong>. Los usuarios autónomos acceden al equipo mediante pago por uso móvil, y tu centro se lleva una <strong>comisión neta garantizada del rendimiento mensual</strong> solo por ceder el espacio, sin inversión inicial.
                 </p>
               </div>
 

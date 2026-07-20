@@ -55,7 +55,7 @@ export default function RoiSimulator({ onPreFillContact }: RoiSimulatorProps) {
   let opexLabel = '';
 
   if (useSplitModel) {
-    opexLabel = 'Explotación Conjunta (Split 70/30)';
+    opexLabel = 'Explotación Conjunta (Reparto 70/30)';
     opexMonthlyCost = 0; // Cost is 0
     opexMonthlyNetProfit = totalGrossRevenue * 0.30; // 30% clean commission for the space
   } else {
@@ -70,7 +70,7 @@ export default function RoiSimulator({ onPreFillContact }: RoiSimulatorProps) {
   const cashflowDifference = opexNetMonth1 - capexNetMonth1;
 
   const handleApplyHaaS = () => {
-    const usageMessage = `Hola Equipy, estoy interesado en vuestra solución HaaS para el equipo "${currentAsset.name}" en un espacio de tipo "${currentVertical.name}". Mis parámetros simulados son: ${monthlyUses} ${currentAsset.metricUnit} al mes con un cargo estimado de ${chargePerUse.toFixed(2)}€ por uso, buscando un modelo de tipo ${useSplitModel ? 'Explotación Conjunta Split 70/30' : 'Renting Operativo por Telemetría'}. ¡Solicito propuesta personalizada!`;
+    const usageMessage = `Hola Equipy, estoy interesado en vuestra solución HaaS para el equipo "${currentAsset.name}" en un espacio de tipo "${currentVertical.name}". Mis parámetros simulados son: ${monthlyUses} ${currentAsset.metricUnit} al mes con un cargo estimado de ${chargePerUse.toFixed(2)}€ por uso, buscando un acuerdo de tipo ${useSplitModel ? 'Explotación Conjunta (Reparto de ingresos 70/30)' : 'Renting Operativo por Telemetría'}. ¡Solicito propuesta personalizada!`;
     
     onPreFillContact(currentVertical.name, currentAsset.name, monthlyUses, usageMessage);
   };
@@ -156,7 +156,7 @@ export default function RoiSimulator({ onPreFillContact }: RoiSimulatorProps) {
                 <div className="mb-6 bg-brand-cyan/10 border border-brand-cyan/20 rounded-xl p-4 flex items-center justify-between">
                   <div>
                     <span className="text-xs font-extrabold text-brand-navy block uppercase tracking-wider">
-                      Modelo Split 70/30 Disponible
+                      Reparto de ingresos 70/30 Disponible
                     </span>
                     <span className="text-[10px] text-gray-600 block mt-0.5">
                       Socio explotador. 30% del rendimiento limpio para ti sin cuotas.

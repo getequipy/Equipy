@@ -31,7 +31,7 @@ export default function Comparison() {
       icon: RefreshCw
     },
     {
-      title: 'Modelos Comerciales Flexibles',
+      title: 'Esquemas de Pago Flexibles',
       points: [
         'Pago por Uso: a) Facturación mensual indexada de forma directa al uso real medido por telemetría IoT. b) Servicio prepagado por el usuario mediante pasarela de pago y código QR.',
         'Suscripción Mensual por Operador / Usuario: El espacio o hub comercializa un pase "Premium" o una membresía mensual para acceder a la maquinaria. El beneficio se reparte.',
@@ -95,7 +95,7 @@ export default function Comparison() {
           
           <div className="relative z-10">
             <h4 className="font-display font-bold text-xl sm:text-2xl text-center mb-8">
-              Resumen Comparativo de Modelos
+              Comparativa Financiera: CapEx vs. OpEx
             </h4>
 
             {/* Desktop & Mobile Responsive Table */}
